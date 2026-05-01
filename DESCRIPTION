@@ -4,7 +4,7 @@ Title: Graph Atom Decomposition for igraph Objects
 Version: 0.0.1
 Authors@R: person("Heng", role = c("aut", "cre"), email = "peiheng@nenu.edu.cn")
 Description: Provides graph atom decomposition utilities backed by a C implementation
-    using the igraph C library. The package exposes two interfaces for computing
+    using igraph C APIs. The package exposes two interfaces for computing
     a minimal collapsible set and decomposing a graph into atoms and separators.
 License: MIT + file LICENSE
 Encoding: UTF-8

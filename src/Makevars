@@ -1,0 +1,19 @@
+PKG_CFLAGS += -std=gnu11
+PKG_CFLAGS += $(SHLIB_OPENMP_CFLAGS)
+PKG_LIBS += $(SHLIB_OPENMP_CFLAGS)
+
+# Try system igraph first (recommended: libigraph-dev)
+PKG_CPPFLAGS += $(shell pkg-config --cflags igraph 2>/dev/null)
+PKG_LIBS += $(shell pkg-config --libs igraph 2>/dev/null)
+
+# Fallback: allow manual include/library paths from environment
+#   IGRAPH_INCLUDE_DIR=/path/to/include  (must contain igraph/igraph.h)
+#   IGRAPH_LIB_DIR=/path/to/lib          (must contain libigraph)
+ifdef IGRAPH_INCLUDE_DIR
+PKG_CPPFLAGS += -I$(IGRAPH_INCLUDE_DIR)
+endif
+ifdef IGRAPH_LIB_DIR
+PKG_LIBS += -L$(IGRAPH_LIB_DIR)
+endif
+
+OBJECTS = decom_h.o r_interface.o
