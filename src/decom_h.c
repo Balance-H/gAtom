@@ -6,7 +6,7 @@
 #include <string.h>  // for memset
 #include <stdbool.h>
 #include <omp.h>
-#include "uthash.h"
+//#include "uthash.h"
 #include <stdio.h>
 #include <time.h>
 #include "decom_h.h"
