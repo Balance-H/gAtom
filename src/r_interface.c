@@ -1,7 +1,6 @@
 #include <R.h>
 #include <R_ext/Arith.h>
 #include <Rinternals.h>
-#include <igraph.h>
 
 #include <limits.h>
 #include <stdlib.h>
