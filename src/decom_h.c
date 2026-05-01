@@ -1,7 +1,7 @@
 //#define _CRTDBG_MAP_ALLOC //用于内存泄露检测
 //#include <crtdbg.h>
 
-#include <igraph/igraph.h>
+#include <igraph.h>
 #include <stdlib.h>
 #include <string.h>  // for memset
 #include <stdbool.h>
