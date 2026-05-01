@@ -16,4 +16,4 @@ ifdef IGRAPH_LIB_DIR
 PKG_LIBS += -L$(IGRAPH_LIB_DIR)
 endif
 
-OBJECTS = decom_h.o r_interface.o
+OBJECTS = decom_h.o r_interface.o init.o
