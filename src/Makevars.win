@@ -1,0 +1,8 @@
+PKG_CFLAGS += -std=gnu11
+PKG_CFLAGS += $(SHLIB_OPENMP_CFLAGS)
+PKG_LIBS += $(SHLIB_OPENMP_CFLAGS)
+
+# Windows fallback for local development:
+# compile the self-contained R interface implementation only.
+# This avoids unresolved DLL runtime deps on external igraph binaries.
+OBJECTS = r_interface.o
