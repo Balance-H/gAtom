@@ -1,0 +1,23 @@
+Package: gAtom
+Type: Package
+Title: Graph Atom Decomposition for igraph Objects
+Version: 0.0.1
+Authors@R: person("Heng", role = c("aut", "cre"), email = "heng@example.com")
+Description: Provides graph atom decomposition utilities backed by a C implementation
+    using the igraph C library. The package exposes two interfaces for computing
+    a minimal collapsible set and decomposing a graph into atoms and separators.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: cli, igraph
+LinkingTo: igraph
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+SystemRequirements: C11, OpenMP
+NeedsCompilation: yes
+Author: Heng [aut, cre]
+Maintainer: Heng <heng@example.com>
+Built: R 4.4.2; x86_64-w64-mingw32; 2026-04-26 06:19:25 UTC; windows
+Archs: x64

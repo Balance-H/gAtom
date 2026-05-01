@@ -1,0 +1,10 @@
+useDynLib(gAtom, .registration = TRUE)
+
+export(get_minimal_collapsible)
+export(decompose_atoms)
+
+importFrom(cli, cli_abort)
+importFrom(igraph, as_edgelist)
+importFrom(igraph, is_directed)
+importFrom(igraph, is_igraph)
+importFrom(igraph, vcount)
