@@ -2,7 +2,7 @@
 #define DECOM_H_H
 
 
-#include <igraph.h>
+#include <igraph/igraph.h>
 
 #ifdef __cplusplus
 extern "C" {
